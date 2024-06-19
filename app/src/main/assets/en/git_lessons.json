@@ -51,6 +51,39 @@
           "Explanation": "You can ask the model to produce outputs that are of a given target length. The targeted output length can be specified in terms of the count of words, sentences, paragraphs, bullet points, etc. Note however that instructing the model to generate a specific number of words does not work with high precision. The model can more reliably generate outputs with a specific number of paragraphs or bullet points"
         }
       ]
+    },
+    {
+      "LessonTitle": "Strategy: Test changes systematically",
+      "Steps": [
+        {
+          "StepNumber": 1,
+          "Description": "Tactic: Evaluate model outputs with reference to gold-standard answers",
+          "Example": "Neil Armstrong is famous for being the first human to set foot on the Moon. This historic event took place on July 21, 1969, during the Apollo 11 mission. ",
+          "Explanation": "Suppose it is known that the correct answer to a question should make reference to a specific set of known facts. Then we can use a model query to count how many of the required facts are included in the answer."
+        }
+      ]
+    },
+    {
+      "LessonTitle": "Strategy: Use external tools",
+      "Steps": [
+        {
+          "StepNumber": 1,
+          "Description": "Tactic: Use code execution to perform more accurate calculations or call external APIs",
+          "Example": "Find all real-valued roots of the following polynomial: 3*x**5 - 5*x**4 - 3*x**3 - 7*x - 10.",
+          "Explanation": "Language models cannot be relied upon to perform arithmetic or long calculations accurately on their own. In cases where this is needed, a model can be instructed to write and run code instead of making its own calculations. In particular, a model can be instructed to put code that is meant to be run into a designated format such as triple backtick. After an output is produced, the code can be extracted and run. Finally, if necessary, the output from the code execution engine (i.e. Python interpreter) can be provided as an input to the model for the next query."
+        }
+      ]
+    },
+    {
+      "LessonTitle": "Strategy: Use external tools",
+      "Steps": [
+        {
+          "StepNumber": 1,
+          "Description": "Tactic: Instruct the model to answer using a reference text",
+          "Example": "<insert articles, each delimited by triple quotes>\n\nQuestion: <insert question here>",
+          "Explanation": "If we can provide a model with trusted information that is relevant to the current query, then we can instruct the model to use the provided information to compose its answer."
+        }
+      ]
     }
   ]
 }

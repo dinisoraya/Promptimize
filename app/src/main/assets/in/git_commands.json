@@ -2,14 +2,14 @@
   "gitCommands": [
     {
       "name": "Koreksi Grammar",
-      "command": "You will be provided with statements, and your task is to convert them to standard English. She no went to the market.",
-      "description": "Convert ungrammatical statements into standard English.",
-      "example": "She did not go to the market."
+      "command": "Anda akan diberikan pernyataan, dan tugas anda adalah mengubahnya ke bahasa inggris . She no went to the market.",
+      "description": "Ubah pernyataan yang tidak bergramatika menjadi bahasa Inggris standar.",
+      "example": "Dini tidak pergi ke pasar."
     },
     {
       "name": "Terjemahan Emoji",
-      "command": "You will be provided with text, and your task is to translate it into emojis. Do not use any regular text. Do your best with emojis only. Artificial intelligence is a technology with great promise.",
-      "description": "Translate regular text into emoji text.",
+      "command": "Anda akan diberikan teks, dan tugas Anda adalah menerjemahkannya ke dalam emoji. Jangan gunakan teks biasa. Lakukan yang terbaik dengan hanya menggunakan emoji. Kecerdasan buatan adalah teknologi dengan potensi besar.",
+      "description": "Kecerdasan buatan adalah teknologi dengan potensi besar.",
       "example": "\uD83E\uDD16\uD83E\uDDE0\uD83D\uDCC8"
     }
   ]

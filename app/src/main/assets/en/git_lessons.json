@@ -1,0 +1,56 @@
+{
+  "gitLessons": [
+    {
+      "LessonTitle": "Introduction to Prompt Engineering",
+      "Steps": [
+        {
+          "StepNumber": 1,
+          "Description": "What is Prompt?",
+          "Example": "Write a small paragraph describing your favorite holiday destination",
+          "Explanation": "A prompt is an input that produces the desired output."
+        }
+      ]
+    },
+    {
+      "LessonTitle": "Strategy: Write clear instructions",
+      "Steps": [
+        {
+          "StepNumber": 1,
+          "Description": "Tactic: Include details in your query to get more relevant answers",
+          "Example": "How do I add up a row of dollar amounts in Excel? I want to do this automatically for a whole sheet of rows with all the totals ending up on the right in a column called \"Total\".",
+          "Explanation": "In order to get a highly relevant response, make sure that requests provide any important details or context. Otherwise you are leaving it up to the model to guess what you mean."
+        },
+        {
+          "StepNumber": 2,
+          "Description": "Tactic: Ask the model to adopt a persona",
+          "Example": "When I ask for help to write something, you will reply with a document that contains at least one joke or playful comment in every paragraph. Write a thank you note to my steel bolt vendor for getting the delivery in on time and in short notice. This made it possible for us to deliver an important order.",
+          "Explanation": "The system message can be used to specify the persona used by the model in its replies."
+        },
+        {
+          "StepNumber": 3,
+          "Description": "Tactic: Use delimiters to clearly indicate distinct parts of the input",
+          "Example": "Summarize the text delimited by triple quotes with a haiku.\n\n\"\"\"insert text here\"\"\"",
+          "Explanation": "Delimiters like triple quotation marks, XML tags, section titles, etc. can help demarcate sections of text to be treated differently."
+        },
+        {
+          "StepNumber": 4,
+          "Description": "Tactic: Specify the steps required to complete a task",
+          "Example": "",
+          "Explanation": "Some tasks are best specified as a sequence of steps. Writing the steps out explicitly can make it easier for the model to follow them."
+        },
+        {
+          "StepNumber": 5,
+          "Description": "Tactic: Provide examples",
+          "Example": "",
+          "Explanation": "Providing general instructions that apply to all examples is generally more efficient than demonstrating all permutations of a task by example, but in some cases providing examples may be easier. For example, if you intend for the model to copy a particular style of responding to user queries which is difficult to describe explicitly. This is known as \"few-shot\" prompting."
+        },
+        {
+          "StepNumber": 6,
+          "Description": "Tactic: Specify the desired length of the output",
+          "Example": "Summarize the text delimited by triple quotes in about 50 words.\n\n\"\"\"insert text here\"\"\"",
+          "Explanation": "You can ask the model to produce outputs that are of a given target length. The targeted output length can be specified in terms of the count of words, sentences, paragraphs, bullet points, etc. Note however that instructing the model to generate a specific number of words does not work with high precision. The model can more reliably generate outputs with a specific number of paragraphs or bullet points"
+        }
+      ]
+    }
+  ]
+}

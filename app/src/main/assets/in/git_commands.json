@@ -1,0 +1,16 @@
+{
+  "gitCommands": [
+    {
+      "name": "Koreksi Grammar",
+      "command": "You will be provided with statements, and your task is to convert them to standard English. She no went to the market.",
+      "description": "Convert ungrammatical statements into standard English.",
+      "example": "She did not go to the market."
+    },
+    {
+      "name": "Terjemahan Emoji",
+      "command": "You will be provided with text, and your task is to translate it into emojis. Do not use any regular text. Do your best with emojis only. Artificial intelligence is a technology with great promise.",
+      "description": "Translate regular text into emoji text.",
+      "example": "\uD83E\uDD16\uD83E\uDDE0\uD83D\uDCC8"
+    }
+  ]
+}

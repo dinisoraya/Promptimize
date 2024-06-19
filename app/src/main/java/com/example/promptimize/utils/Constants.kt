@@ -5,7 +5,7 @@ object Constants {
     var shareMessage =
         "Become a Prompt Engineering expert with Promptimize! Download now\n"
 
-    const val SOURCE_CODE_LINK = "https://github.com/dinisoraya/promptimize"
+    const val SOURCE_CODE_LINK = "https://github.com/dinisoraya/Promptimize"
 
     // Settings
     const val LOCALE = "locale"

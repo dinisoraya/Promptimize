@@ -43,15 +43,7 @@ class MainActivity : AppCompatActivity() {
                 R.id.itemReportBug -> {
                     reportBug()
                 }
-//
-//                R.id.itemSuggestions -> {
-//                    getSuggestions()
-//                }
-//
-//                R.id.itemRateUs -> {
-//                    rateUs()
-//                }
-//
+
                 R.id.itemShareApp -> {
                     shareApp()
                 }
@@ -59,10 +51,6 @@ class MainActivity : AppCompatActivity() {
                 R.id.itemSourceCode -> {
                     sourceCode()
                 }
-
-//                R.id.itemMoreApps -> {
-//                    moreApps()
-//                }
 
                 R.id.itemDeveloper -> {
                     developerProfile()
@@ -93,20 +81,11 @@ class MainActivity : AppCompatActivity() {
         binding.drawerLayout.openDrawer(GravityCompat.START)
     }
 
-//    private fun moreApps() {
-//        val intent = Intent(
-//            Intent.ACTION_VIEW,
-//            Uri.parse(Constants.GOOGLE_PLAY_DEV_LINK)
-//        )
-//        startActivity(intent)
-//
-//    }
-
     private fun shareApp() {
         val shareIntent = Intent(Intent.ACTION_SEND)
         shareIntent.type = "text/plain"
-        shareMessage += "https://github.com/dinisoraya/promptimize"
-        shareIntent.putExtra(Intent.EXTRA_SUBJECT, "Git Coach")
+        shareMessage += "https://github.com/dinisoraya/Promptimize"
+        shareIntent.putExtra(Intent.EXTRA_SUBJECT, "Promptimize")
         shareIntent.putExtra(Intent.EXTRA_TEXT, shareMessage)
         startActivity(Intent.createChooser(shareIntent, "Share This App"))
     }
@@ -120,26 +99,6 @@ class MainActivity : AppCompatActivity() {
         val intent = Intent(Intent.ACTION_SENDTO, Uri.parse(uriString))
         startActivity(Intent.createChooser(intent, "Report Bug"))
     }
-
-//    private fun getSuggestions() {
-//
-//        val subject = "Git Coach: Suggestions"
-//        val uriBuilder = StringBuilder("mailto:" + Uri.encode(Constants.email))
-//        uriBuilder.append("?subject=" + Uri.encode(subject))
-//        val uriString = uriBuilder.toString()
-//
-//        val intent = Intent(Intent.ACTION_SENDTO, Uri.parse(uriString))
-//        startActivity(Intent.createChooser(intent, "Send Suggestions"))
-//    }
-
-//    private fun rateUs() {
-//        val intent = Intent(
-//            Intent.ACTION_VIEW,
-//            Uri.parse("http://play.google.com/store/apps/details?id=" + applicationContext.packageName)
-//        )
-//        startActivity(intent)
-//
-//    }
 
     private fun sourceCode() {
         val intent = Intent(

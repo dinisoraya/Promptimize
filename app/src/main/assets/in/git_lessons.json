@@ -1,54 +1,87 @@
 {
   "gitLessons": [
     {
-      "LessonTitle": "Introduction to Prompt Engineering",
+      "LessonTitle": "Pengenalan ke Prompt Engineering",
       "Steps": [
         {
           "StepNumber": 1,
-          "Description": "What is Prompt?",
-          "Example": "Write a small paragraph describing your favorite holiday destination",
-          "Explanation": "A prompt is an input that produces the desired output."
+          "Description": "Apa itu Prompt?",
+          "Example": "Tulis sebuah paragraf kecil yang menggambarkan destinasi liburan favoritmu.",
+          "Explanation": "Prompt adalah input yang menghasilkan output yang diinginkan."
         }
       ]
     },
     {
-      "LessonTitle": "Strategy: Write clear instructions",
+      "LessonTitle": "Strategi: Menulis instruksi yang jelas",
       "Steps": [
         {
           "StepNumber": 1,
-          "Description": "Tactic: Include details in your query to get more relevant answers",
-          "Example": "How do I add up a row of dollar amounts in Excel? I want to do this automatically for a whole sheet of rows with all the totals ending up on the right in a column called \"Total\".",
-          "Explanation": "In order to get a highly relevant response, make sure that requests provide any important details or context. Otherwise you are leaving it up to the model to guess what you mean."
+          "Description": "Taktik: Sertakan detail dalam permintaanmu untuk mendapatkan jawaban yang lebih relevan",
+          "Example": "Bagaimana cara menjumlahkan baris jumlah dolar di Excel? Saya ingin melakukannya secara otomatis untuk seluruh lembar baris dengan semua total berakhir di sebelah kanan dalam kolom yang disebut \"Total\".",
+          "Explanation": "Untuk mendapatkan respons yang sangat relevan, pastikan permintaan memberikan detail atau konteks penting. Jika tidak, Anda membiarkan model menebak apa yang Anda maksud."
         },
         {
           "StepNumber": 2,
-          "Description": "Tactic: Ask the model to adopt a persona",
-          "Example": "When I ask for help to write something, you will reply with a document that contains at least one joke or playful comment in every paragraph. Write a thank you note to my steel bolt vendor for getting the delivery in on time and in short notice. This made it possible for us to deliver an important order.",
-          "Explanation": "The system message can be used to specify the persona used by the model in its replies."
+          "Description": "Taktik: Minta model untuk mengadopsi persona",
+          "Example": "Ketika saya meminta bantuan untuk menulis sesuatu, Anda akan membalas dengan dokumen yang berisi setidaknya satu lelucon atau komentar lucu di setiap paragraf. Tulis catatan terima kasih kepada vendor baut baja saya karena mengirimkan pengiriman tepat waktu dan dalam waktu singkat. Ini memungkinkan kami untuk mengirimkan pesanan penting.",
+          "Explanation": "Pesan sistem dapat digunakan untuk menentukan persona yang digunakan oleh model dalam jawabannya."
         },
         {
           "StepNumber": 3,
-          "Description": "Tactic: Use delimiters to clearly indicate distinct parts of the input",
-          "Example": "Summarize the text delimited by triple quotes with a haiku.\n\n\"\"\"insert text here\"\"\"",
-          "Explanation": "Delimiters like triple quotation marks, XML tags, section titles, etc. can help demarcate sections of text to be treated differently."
+          "Description": "Taktik: Gunakan pembatas untuk dengan jelas menunjukkan bagian-bagian terpisah dari input",
+          "Example": "Ringkas teks yang dibatasi oleh tanda kutip tiga dengan haiku.\n\n\"\"\"masukkan teks di sini\"\"\"",
+          "Explanation": "Pembatas seperti tanda kutip tiga, tag XML, judul bagian, dll. dapat membantu memisahkan bagian-bagian teks yang akan diperlakukan secara berbeda."
         },
         {
           "StepNumber": 4,
-          "Description": "Tactic: Specify the steps required to complete a task",
+          "Description": "Taktik: Tentukan langkah-langkah yang diperlukan untuk menyelesaikan tugas",
           "Example": "",
-          "Explanation": "Some tasks are best specified as a sequence of steps. Writing the steps out explicitly can make it easier for the model to follow them."
+          "Explanation": "Beberapa tugas paling baik ditentukan sebagai urutan langkah. Menuliskan langkah-langkah tersebut secara eksplisit dapat memudahkan model untuk mengikutinya."
         },
         {
           "StepNumber": 5,
-          "Description": "Tactic: Provide examples",
+          "Description": "Taktik: Berikan contoh",
           "Example": "",
-          "Explanation": "Providing general instructions that apply to all examples is generally more efficient than demonstrating all permutations of a task by example, but in some cases providing examples may be easier. For example, if you intend for the model to copy a particular style of responding to user queries which is difficult to describe explicitly. This is known as \"few-shot\" prompting."
+          "Explanation": "Memberikan instruksi umum yang berlaku untuk semua contoh umumnya lebih efisien daripada menunjukkan semua variasi tugas melalui contoh, tetapi dalam beberapa kasus memberikan contoh mungkin lebih mudah. Misalnya, jika Anda bermaksud agar model meniru gaya tertentu dalam merespons pertanyaan pengguna yang sulit dijelaskan secara eksplisit. Ini dikenal sebagai \"few-shot\" prompting."
         },
         {
           "StepNumber": 6,
-          "Description": "Tactic: Specify the desired length of the output",
-          "Example": "Summarize the text delimited by triple quotes in about 50 words.\n\n\"\"\"insert text here\"\"\"",
-          "Explanation": "You can ask the model to produce outputs that are of a given target length. The targeted output length can be specified in terms of the count of words, sentences, paragraphs, bullet points, etc. Note however that instructing the model to generate a specific number of words does not work with high precision. The model can more reliably generate outputs with a specific number of paragraphs or bullet points"
+          "Description": "Taktik: Tentukan panjang output yang diinginkan",
+          "Example": "Ringkas teks yang dibatasi oleh tanda kutip tiga dalam sekitar 50 kata.\n\n\"\"\"masukkan teks di sini\"\"\"",
+          "Explanation": "Anda dapat meminta model untuk menghasilkan output dengan panjang target tertentu. Panjang output yang ditargetkan dapat ditentukan dalam jumlah kata, kalimat, paragraf, poin-poin, dll. Namun, perlu dicatat bahwa meminta model untuk menghasilkan sejumlah kata tertentu tidak bekerja dengan presisi tinggi. Model lebih dapat diandalkan untuk menghasilkan output dengan jumlah paragraf atau poin tertentu."
+        }
+      ]
+    },
+    {
+      "LessonTitle": "Strategi: Uji perubahan secara sistematis",
+      "Steps": [
+        {
+          "StepNumber": 1,
+          "Description": "Taktik: Evaluasi output model dengan referensi pada jawaban standar emas",
+          "Example": "Neil Armstrong terkenal karena menjadi manusia pertama yang menginjakkan kaki di Bulan. Peristiwa bersejarah ini terjadi pada 21 Juli 1969, selama misi Apollo 11.",
+          "Explanation": "Misalkan diketahui bahwa jawaban yang benar untuk sebuah pertanyaan harus merujuk pada serangkaian fakta tertentu yang diketahui. Kemudian kita dapat menggunakan permintaan model untuk menghitung berapa banyak fakta yang diperlukan yang termasuk dalam jawaban tersebut."
+        }
+      ]
+    },
+    {
+      "LessonTitle": "Strategi: Gunakan alat eksternal",
+      "Steps": [
+        {
+          "StepNumber": 1,
+          "Description": "Taktik: Gunakan eksekusi kode untuk melakukan perhitungan yang lebih akurat atau memanggil API eksternal",
+          "Example": "Temukan semua akar bernilai nyata dari polinomial berikut: 3x**5 - 5x4 - 3*x3 - 7*x - 10.",
+          "Explanation": "Model bahasa tidak dapat diandalkan untuk melakukan aritmatika atau perhitungan panjang dengan akurat sendiri. Dalam kasus di mana ini diperlukan, model dapat diarahkan untuk menulis dan menjalankan kode daripada melakukan perhitungannya sendiri. Secara khusus, model dapat diarahkan untuk menempatkan kode yang dimaksudkan untuk dijalankan ke dalam format yang ditentukan seperti backtick tiga. Setelah output dihasilkan, kode dapat diekstrak dan dijalankan. Akhirnya, jika diperlukan, output dari mesin eksekusi kode (mis. interpreter Python) dapat disediakan sebagai input untuk permintaan model berikutnya."
+        }
+      ]
+    },
+    {
+      "LessonTitle": " Strategi: Gunakan alat eksternal",
+      "Steps": [
+        {
+          "StepNumber": 1,
+          "Description": "Taktik: Arahkan model untuk menjawab menggunakan teks referensi",
+          "Example": "<masukkan artikel, masing-masing dibatasi oleh tanda kutip tiga>\n\nPertanyaan: <masukkan pertanyaan di sini>",
+          "Explanation": "Jika kita dapat menyediakan model dengan informasi terpercaya yang relevan dengan pertanyaan saat ini, maka kita dapat mengarahkan model untuk menggunakan informasi yang disediakan untuk menyusun jawabannya."
         }
       ]
     }

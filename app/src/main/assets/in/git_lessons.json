@@ -98,9 +98,7 @@
         {
           "StepNumber": 1,
           "Description": "Taktik: Instruksikan model untuk menyusun solusinya sendiri sebelum terburu-buru mengambil kesimpulan",
-          "Example": "Pernyataan Masalah: Saya sedang membangun instalasi tenaga surya dan saya membutuhkan bantuan menghitung keuangan.\n- Biaya tanah $100 / kaki persegi\n- Saya bisa membeli panel surya seharga $250 / kaki persegi\n- Saya menegosiasikan kontrak untuk pemeliharaan yang akan menelan biaya tetap $100k per tahun, dan tambahan $10 / kaki persegi\nBerapa total biaya untuk tahun pertama operasi sebagai fungsi dari jumlah kaki persegi.\n\nSolusi Siswa: Biarkan x menjadi ukuran instalasi dalam kaki persegi.\n1. Biaya tanah: 100x\n2. Biaya panel surya: 250x\n3. Biaya pemel
-
-          iharaan: 100,000 + 100x\nTotal biaya: 100x + 250x + 100,000 + 100x = 450x + 100,000",
+          "Example": "Pernyataan Masalah: Saya sedang membangun instalasi tenaga surya dan saya membutuhkan bantuan menghitung keuangan.\n- Biaya tanah $100 / kaki persegi\n- Saya bisa membeli panel surya seharga $250 / kaki persegi\n- Saya menegosiasikan kontrak untuk pemeliharaan yang akan menelan biaya tetap $100k per tahun, dan tambahan $10 / kaki persegi\nBerapa total biaya untuk tahun pertama operasi sebagai fungsi dari jumlah kaki persegi.\n\nSolusi Siswa: Biarkan x menjadi ukuran instalasi dalam kaki persegi.\n1. Biaya tanah: 100x\n2. Biaya panel surya: 250x\n3. Biaya pemeliharaan: 100,000 + 100x\nTotal biaya: 100x + 250x + 100,000 + 100x = 450x + 100,000",
           "Explanation": "Terkadang kita mendapatkan hasil yang lebih baik ketika kita secara eksplisit menginstruksikan model untuk berpikir dari prinsip dasar sebelum mengambil kesimpulan. Misalnya jika kita ingin model mengevaluasi solusi siswa untuk masalah matematika. Cara paling jelas untuk mendekati ini adalah dengan langsung bertanya kepada model apakah solusi siswa itu benar atau tidak."
         },
         {

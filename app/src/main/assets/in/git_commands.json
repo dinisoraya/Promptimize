@@ -2,9 +2,9 @@
   "gitCommands": [
     {
       "name": "Koreksi Grammar",
-      "command": "Anda akan diberikan pernyataan, dan tugas anda adalah mengubahnya ke bahasa inggris . She no went to the market.",
+      "command": "Anda akan diberikan pernyataan, dan tugas anda adalah mengubahnya ke bahasa inggris standar. She no went to the market.",
       "description": "Ubah pernyataan yang tidak bergramatika menjadi bahasa Inggris yang benar.",
-      "example": "Dini tidak pergi ke pasar."
+      "example": "She did not go to the market."
     },
     {
       "name": "Terjemahan Emoji",
@@ -26,10 +26,10 @@
     },
 
     {
-      "name": "Petunjuk Belok demi Belok",
-      "command": "Anda akan diberikan sebuah teks, dan tugas Anda adalah membuat daftar berurutan dari petunjuk belok demi belok dari teks tersebut. Go south on 95 until you hit Sunrise boulevard then take it east to us 1 and head south. Tom Jenkins bbq will be on the left after several miles.",
-      "description": "Konversi bahasa alami menjadi petunjuk belok demi belok.",
-      "example": "1. Start by going south on 95.\n2. Continue on 95 until you reach Sunrise Boulevard.\n3. Take a right onto Sunrise Boulevard and head east.\n4. Follow Sunrise Boulevard until you reach US 1.\n5. Take a left onto US 1 and head south.\n6. After several miles, you will find Tom Jenkins BBQ on the left."
+      "name": "Petunjuk arah belokan demi belokan",
+      "command": "Anda akan diberikan sebuah teks, dan tugas Anda adalah membuat daftar berurutan dari petunjuk arah belokan demi belokan dari teks tersebut. Pergilah ke selatan di jalan 95 sampai Anda mencapai Sunrise Boulevard, lalu ambil jalan tersebut ke arah timur menuju US 1 dan teruslah ke selatan. Tom Jenkins BBQ akan berada di sebelah kiri setelah beberapa mil.",
+      "description": "Konversi bahasa alami menjadi petunjuk arah belokan demi belokan.",
+      "example": "1. Mulailah dengan pergi ke selatan di jalan 95.\n2. Lanjutkan di jalan 95 sampai Anda mencapai Sunrise Boulevard.\n3. Belok kanan ke Sunrise Boulevard dan arahkan ke timur.\n4. Ikuti Sunrise Boulevard sampai Anda mencapai US 1.\n5. Belok kiri ke US 1 dan arahkan ke selatan.\n6. Setelah beberapa mil, Anda akan menemukan Tom Jenkins BBQ di sebelah kiri."
     },
 
     {

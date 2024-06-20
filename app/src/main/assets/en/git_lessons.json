@@ -8,6 +8,12 @@
           "Description": "What is Prompt?",
           "Example": "Write a small paragraph describing your favorite holiday destination",
           "Explanation": "A prompt is an input that produces the desired output."
+        },
+        {
+          "StepNumber": 2,
+          "Description": "What is Prompt Engineering?",
+          "Example": "",
+          "Explanation": "Process of designing effective prompts."
         }
       ]
     },

@@ -8,6 +8,12 @@
           "Description": "Apa itu Prompt?",
           "Example": "Tuliskan paragraf pendek yang menggambarkan tujuan liburan favorit Anda",
           "Explanation": "Prompt adalah input yang menghasilkan output yang diinginkan."
+        },
+        {
+          "StepNumber": 2,
+          "Description": "Apa itu Prompt Engineering?",
+          "Example": "",
+          "Explanation": "Proses merancang prompt yang efektif."
         }
       ]
     },
